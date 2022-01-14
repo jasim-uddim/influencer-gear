@@ -1,14 +1,43 @@
 /* * */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Poppins:ital,wght@0,400;0,500;1,300&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
 * {
   margin: 0 auto;
   list-style: none;
   text-decoration: none;
 }
+h2 {
+  color: #3a3a3a;
+}
 h3 {
   font-size: 24px;
 }
+
 a {
   color: black;
+}
+/* header bottom style */
+.influencer {
+  width: 50%;
+}
+.description {
+  width: 50%;
+}
+.color {
+  color: #3a3a3a;
+}
+.btn {
+  background: #e02c6d;
+  color: white;
+  border: none;
+
+  border-radius: 10px;
+  padding: 5px;
+}
+.fa-arrow-right {
+  margin-left: 10px;
 }
 .header {
   width: 100%;
