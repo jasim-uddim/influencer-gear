@@ -24,6 +24,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.half-width {
+  width: 50%;
+}
+.half-width img {
+  width: 100%;
+}
 .manu-items ul {
   display: flex;
 }
@@ -53,9 +59,10 @@ ul li {
 }
 .influencer {
   width: 50%;
+  transition: all ease 0.3s;
 }
 .influencer:hover {
-  transform: rotate(60deg);
+  transform: scale(1.2);
   background-color: burlywood;
   border-radius: 50%;
 }
@@ -70,13 +77,14 @@ ul li {
   grid-row-gap: 20px;
 }
 .card {
-  width: 325px;
-  height: 475px;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
   border: none;
   box-shadow: 5px 5px 10px rgb(218, 204, 204);
+}
+.card img {
+  width: 100%;
 }
 .fas {
   font-size: 12px;
@@ -96,12 +104,7 @@ ul li {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.influencer-anuncment {
-  width: 40%;
-}
-.influencer-img {
-  width: 60;
-}
+
 .influencer-img img {
   width: 100%;
 }
@@ -138,15 +141,21 @@ footer a:hover {
 @media only screen and (max-width: 688px) {
   .header-top {
     flex-direction: column;
+    justify-content: center;
     text-align: center;
+  }
+  .half-width {
+    width: 100%;
   }
   .manu-items ul {
     flex-direction: column;
+    justify-content: center;
     display: block;
     text-align: center;
   }
   .header-bottom {
     flex-direction: column;
+    justify-content: center;
     text-align: center;
   }
   .Popular-card {
@@ -157,14 +166,28 @@ footer a:hover {
     grid-column-gap: 10px;
   }
 }
-@media (min-width: 800px) and(max-width:1080px) {
+
+@media only screen and (min-width: 688px) and (max-width: 850px) {
   .header-top {
-    flex-direction: column(2);
+    flex-direction: column;
+    justify-content: center;
+  }
+  .half-width {
+    width: 100%;
   }
   .manu-items ul {
-    flex-direction: column(2);
+    flex-direction: column;
+    justify-content: center;
   }
   .header-bottom {
-    flex-direction: column(2);
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Popular-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tell-about-us {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
   }
 }
