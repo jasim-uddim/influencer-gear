@@ -42,17 +42,53 @@ ul li {
 .blog {
   width: 50%;
 }
+.btn {
+  color: white;
+  background: #e02c6d;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+}
 .influencer {
   width: 50%;
 }
 /* main part style */
+#collection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Popular-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+}
+.card {
+  width: 325px;
+  height: 475px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 5px 5px 10px rgb(218, 204, 204);
+}
+.fas {
+  font-size: 8px;
+  color: orange;
+  margin: 0;
+  padding: 0;
+}
 @media only screen and (max-width: 800px) {
-  .container {
+  .header-top {
     flex-direction: column;
+    text-align: center;
   }
   .manu-items ul {
     flex-direction: column;
     display: block;
+    text-align: center;
+  }
+  .header-bottom {
+    flex-direction: column;
     text-align: center;
   }
 }
