@@ -48,6 +48,7 @@ ul li {
   border-radius: 10px;
   padding: 5px;
   border: none;
+  margin-bottom: 10px;
 }
 .influencer {
   width: 50%;
@@ -73,7 +74,7 @@ ul li {
 }
 .fas {
   font-size: 12px;
-  color: orange;
+  /* color: orange; */
   margin: 0;
   padding: 0;
 }
@@ -83,6 +84,50 @@ ul li {
   margin-top: 30px;
   margin-right: 60px;
 }
+/* main part style */
+/* bonus part style */
+.tell-about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.influencer-anuncment {
+  width: 40%;
+}
+.influencer-img {
+  width: 60;
+}
+.influencer-img img {
+  width: 100%;
+}
+/* bonus part style */
+/* footer style start */
+
+footer {
+  background: black;
+  padding: 3rem 0rem;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
+footer > * {
+  margin-bottom: 1rem;
+}
+.icon i {
+  background: #22213c;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon i:hover {
+  background-color: #333255;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+/* footer style end */
 @media only screen and (max-width: 800px) {
   .header-top {
     flex-direction: column;
@@ -96,5 +141,12 @@ ul li {
   .header-bottom {
     flex-direction: column;
     text-align: center;
+  }
+  .Popular-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tell-about-us {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10px;
   }
 }
