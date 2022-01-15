@@ -12,6 +12,7 @@ body {
 /* header part style */
 .container {
   width: 100%;
+  background-color: #fffbf0;
 }
 .main-container {
   width: 90%;
@@ -53,7 +54,12 @@ ul li {
 .influencer {
   width: 50%;
 }
-/* main part style */
+.influencer:hover {
+  transform: rotate(60deg);
+  background-color: burlywood;
+  border-radius: 50%;
+}
+
 #collection {
   text-align: center;
   margin-bottom: 20px;
